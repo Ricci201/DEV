@@ -56,9 +56,17 @@ Saída: 1, 3, 5, 8, 9
 
 console.log("------------------------------------------------------");
 
-
+const imparpar = (num) => {
+  return num % 2 == 0 ? "O numero é par!" : "O numero é impar!";
+};
+console.log(imparpar(10));
+console.log(imparpar(3));
+console.log(imparpar(2));
 
 // 2. Tabuada
+
+console.log("------------------------------------------------------");
+
 var tabuada = 6;
 console.log(tabuada, "x 1 = ", tabuada * 1);
 console.log(tabuada, "x 2 = ", tabuada * 2);
@@ -88,6 +96,6 @@ console.log(numeros[0] + numeros[1] + numeros[2] + numeros[3]);
 
 console.log("------------------------------------------------------");
 
-var batata = [8, 3, 5, 1, 9];
+var ordemNumero = [8, 3, 5, 1, 9];
 batata.sort();
 console.table(batata);
