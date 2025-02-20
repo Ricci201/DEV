@@ -23,7 +23,7 @@ if (anoNascimento > 2000) {
 
 // Condições compostas com if
 
-console.log("------------------------------------------------------");
+console.log("-------------------------------------------------------");
 
 const login = "adimin";
 const senha = "12345";
@@ -39,7 +39,7 @@ if (loginUser == login && senhaUser == senha) {
 
 // Desvio condicional alinhado - IF ELSEIF-ELSE
 
-console.log("------------------------------------------------------");
+console.log("-------------------------------------------------------");
 
 var semaforo = "vermelho";
 if (semaforo == "verde") {
@@ -52,7 +52,7 @@ if (semaforo == "verde") {
 
 //Desvio condicional IF com bloco de comandos
 
-console.log("------------------------------------------------------");
+console.log("-------------------------------------------------------");
 
 var idade = 19;
 
@@ -67,7 +67,7 @@ console.log("Terminei");
 
 // Criando variaveis locais com "let" (só existe do bloco onde foram criadas)
 
-console.log("------------------------------------------------------");
+console.log("-------------------------------------------------------");
 
 var mes = "Agosto";
 var dia = 15;
@@ -81,7 +81,7 @@ console.log("Tentando acessar a variavel local fora do bloco, vai dar erro");
 
 // Criando uma função com desvio condicional IF
 
-console.log("------------------------------------------------------");
+console.log("-------------------------------------------------------");
 
 const desconto = (valorcompra) => {
   let desconto = 0;
@@ -110,7 +110,7 @@ console.log(
 // Desvio condicional IF inline (ternário)
 //condicao ? expressão_se_verdadeiro : expressão_se_falso
 
-console.log("------------------------------------------------------");
+console.log("-------------------------------------------------------");
 
 var preco = 500;
 var resultado = preco <= 100 ? "Tá barato!" : "Vish, ta muito caro!";
@@ -128,3 +128,72 @@ console.log("Preço: R$", preco, "-", resultado);
 
 var logado = false;
 logado && console.log("Usuario esta logado!");
+
+// Desvio condicional - Switch Case
+
+console.log("----------------------Switch Case----------------------");
+
+switch (0) {
+  case 1:
+    console.log("O usuario digitou o numero 1!");
+    break;
+
+  default:
+    console.log("O usuario informou um numero diferente de 1!");
+    break;
+}
+//Menu de seleção
+
+console.log("-------------------------------------------------------");
+
+var menuSelecionado = "Home";
+switch (menuSelecionado) {
+  case "Home":
+    console.log("Você clicou no link 'Home'");
+    break;
+
+  case "Quem somos":
+    console.log("Você clicou no link 'Quem somos'");
+
+  case "Contato":
+    console.log("Você clicou no link 'Contato'");
+
+  default:
+    console.log("Opção invalida de menu!");
+    break;
+}
+
+//Varias opções com mesmo case - Switch case
+
+console.log("-------------------------------------------------------");
+
+var mes = 1;
+switch (mes) {
+  case 1:
+  case 2:
+  case 3:
+    console.log("Primeiro trimestre!");
+    break;
+
+  case 4:
+  case 5:
+  case 6:
+    console.log("Segundo trimestre!");
+    break;
+
+  case 7:
+  case 8:
+  case 9:
+    console.log("Terceiro trimestre!");
+    break;
+
+  case 10:
+  case 11:
+  case 12:
+    console.log("Quarto trimestre!");
+
+  default:
+    console.log("Mês inválido!");
+    break;
+}
+
